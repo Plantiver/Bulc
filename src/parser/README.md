@@ -20,7 +20,7 @@ A token is a C struct containing:
 For the LR algorithm, I'll build a stack struct to hold tokens while going throught all chars.
 I'll first transform everything I can to a token, stacking it on lStack.
 Then I'll use LR algorithm from right to left, stacking to rStack and matching with patterns.
-And i'll go back and forth, alternatively stacking on left or right stack, and matching patterns to make it smaller.
+And I'll go back and forth, alternatively stacking on left or right stack, and matching patterns to make it smaller.
 If I do nothing for a full period, then raise a syntax error.
 If I eventually reach a size of one, I can end the programm and return the parsed tree.
 
