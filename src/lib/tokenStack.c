@@ -1,6 +1,5 @@
 #include "tokenStack.h"
 #define NULL (void*) 0
-
 // <>
 
 tokenStack*newStack(void) {

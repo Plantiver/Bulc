@@ -4,7 +4,7 @@
 
 // TO DO : Look how I should orgnaize this sht in order to save memory
 typedef struct token {
-    short id;
+    int id;
     char*text;
     int length;
     struct token*tokens;
