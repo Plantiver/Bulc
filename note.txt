@@ -1,0 +1,37 @@
+OKkk, Je vais prendre des notes ici, ce sera plus simple pour avancer, et j'effacerais tout ça un peu plus tard.
+
+
+
+J'ai, après avoir lu quelques trucs, une meilleure idée de comment implémenter mon compilateur, même si ça reste encore assez flou
+pour pas mal de principe. La première chose qui me vient est que je vais découper les étapes en phases, qui vont chacunes
+faire une petite opération sur le code, et lui rajouter des informations. L'utilisateur pourra choisir lesquelles seront
+exécutées et dans quel ordre, et devra donner les bons paramètre, nécessaire à l'exécution de la phase.
+
+Notamment, je pense déjà à:
+Lexer -> Parser -> Typer -> Linker -> Garbage Manager -> Compiler
+Qui pourront être différentes phases appelées avec les bons paramètres.
+Il y en aura bien sûr qui seront obligatoire, et d'autre non.
+Je vais devoir trouver un type correctement implémenté pour pouvoir supporter chacunes des opérations, et faire en sorte qu'un
+résultat retourné par une phase soit toujours compatible avec la phase suivante.
+
+
+Voici la liste des phases que j'ai en tête pour l'instant:
+L'ordre n'est pas défini, même si j'essaye de les écrires dans un ordres d'exécution possible.
+- Suppression de commentaire
+- Import des librairies
+- Lexer
+- Parser
+- Typer
+- Linker
+- Garbage Manager
+- Compiler
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+
+
+/*
+λ
+->
+Parmi les choses que je dois spécifier:
+Les règles de tokenization
+Les règles de construction
+Les règles de compilation
+*/
+
+
+[Tokens]
+lbd = "λ";
+dot = ".";
+rPr = "(";
+lPr = ")";
+eol = ";";
+Spaces = " ", "\t", "\n";
+var = Spaces+[anything except λ.();]+Spaces;
+
+[Parsing]
+final = exps, eof;
+exps = exp, eol;
+appl = rPr, exp, exp, lPr;
+func = lbd, var, dot, exp;
+exp = appl
+    | func
+    | var;
+
+[Compiling]
+!specification
+#no_atomic
+
+!types
+nimp : lbd,dot,rPr,lPr,final, exps;
+app : appl;
+fun : func;
+val : var
+comp :
+    exp.1 : app
+    exp.2 : fun
+    exp.4 : val;
+
+!running
+
+
+
+
+
+
+
+
+

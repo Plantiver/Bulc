@@ -20,3 +20,20 @@ I need to be universal, so every kind of paradygm that could ever be used has to
 I'll be working on C, 'cause with python it seems too easy and i'll most probly do some random shitty code.
 And, woow, C is sooo crazily fast, I need to optimize this little thing as much as I can, so it won't take 0.3 seconds to run, but 0.03.
 (For real, I'm using C cause it's actually using some interesting 'properties' -such as memory management- and I need to get better at working with those.)
+
+
+For now on, I'm working on a python Implementation, cause it'll be way easier.
+Then, I'll rebuild everything in C.
+
+
+
+
+
+
+
+
+I'll stock here some biblio, to get it stored for later:
+- Optimizing Ast transformation
+https://infoscience.epfl.ch/server/api/core/bitstreams/8ab72c0a-8aa6-4dee-a704-3504938dc316/content
+-  Writing a compiler
+https://books.google.fr/books?hl=en&lr=&id=0u3pBwAAQBAJ&oi=fnd&pg=PA1&dq=compiler&ots=vtkWX1hUzu&sig=e4oGIAhSV5CSZ9TsrlKKIhe68OQ&redir_esc=y#v=onepage&q=compiler&f=false
